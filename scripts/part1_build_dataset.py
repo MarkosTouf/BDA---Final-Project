@@ -65,8 +65,6 @@ def get_request_for_symbol(url, symbol, interval, limit_num, time_out, minute_wi
     with concurrent_request_lock:
         
         now = datetime.now(timezone.utc)
-        one_minute_ago = now - timedelta(minutes=1)
-        cutoff_timestamp = one_minute_ago.timestamp()      
 
         while True:
 
@@ -77,7 +75,7 @@ def get_request_for_symbol(url, symbol, interval, limit_num, time_out, minute_wi
                 with rate_request_limit_lock:
                     minute_window_requests.append(now)
 
-                    response_from_server = requests.get(url, params=params,time_out=time_out )
+                    response_from_server = requests.get(url, params=params,timeout=time_out )
                     response_from_server.raise_for_status()
             
                 break
