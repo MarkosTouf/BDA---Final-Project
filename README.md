@@ -34,5 +34,6 @@ The `scripts/` folder already contains small helper scripts:
 - `get_one_record.py`: tests the Binance API by downloading one `BTCUSDT` record.
 - `save_dictionary_to_csv.py`: shows how to save one Python dictionary as a CSV row.
 - `mess_my_data.py`: creates the messy dataset for Team 2 after you complete Team 1.
+- Script part1_build_dataset.py is placed within the scripts folder. It uses multithreading and serial threading to get through api request candlestick market data for 10 crypto symbols at 1h intervals for a limit of 1000 records of clean data per crypto symbol.
 
 Run the first two scripts before building `part1_build_dataset.py`. Run `mess_my_data.py` only after you have created `data/clean/clean_market_data.csv`.

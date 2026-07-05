@@ -1,0 +1,3 @@
+method,seconds,records,note
+multithreading,9.501903899999888,10000,downloaded several symbols at the same time
+serial,20.462597300000198,10000,downloaded the ten symbols one after another
