@@ -1,2 +1,4 @@
 requests
+numpy
 pandas
+ipykernel>=6.0.0
