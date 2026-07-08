@@ -91,7 +91,7 @@ To re-run it, upload `data/clean/cleaned_market_data.csv` and `results/pandas_sa
 
 The final written report explains how the project was built, whether the data is reliable, and what the analytics showed — written for Stelios, without line-by-line code explanation.
 
-- [Report to Stelios](reports/report_to_stelios.md)
+- [Report to Stelios](reports/report_to_Stelios.md)
 
 The reflection covers the hardest technical challenges faced, whether multithreading helped, and what pandas and Spark each made easier.
 
